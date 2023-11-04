@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles calc.css">
+</head>
+
+<body>
+<fieldset>
+<h1><b>CALCULATOR</b></h1>
+    <div class="calculator">
+	<div class="display">
+        <input type="text" id="display" class="display" readonly>
+	</div>
+        <div class="buttons">
+		<button onclick="clearDisplay()">AC</button>
+		<button onclick="clearDisplay()">Del</button>
+		<button onclick="append('.')">.</button>
+		<button onclick="append('+')">+</button>
+		<button onclick="append('7')">7</button>
+            	<button onclick="append('8')">8</button>
+            	<button onclick="append('9')">9</button>
+           	<button onclick="append('-')">-</button>
+		<button onclick="append('4')">4</button>
+            	<button onclick="append('5')">5</button>
+           	<button onclick="append('6')">6</button>
+		<button onclick="append('*')">*</button>
+		<button onclick="append('1')">1</button>
+           	<button onclick="append('2')">2</button>
+            	<button onclick="append('3')">3</button>
+		<button onclick="append('/')">/</button>
+		<button onclick="append('(')">(</button>
+		<button onclick="append('0')">0</button>
+            	<button onclick="append(')')">)</button>
+		<button onclick="calculateSquareRoot()">√</button>
+		<button onclick="calculateResult()">=</button>
+
+
+
+        </div>
+    </div>
+
+    <script src="calci script.js"></script>
+</fieldset>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+function append(value) {
+    document.getElementById("display").value += value;
+}
+
+function clearDisplay() {
+    document.getElementById("display").value = "";
+}
+
+function calculateSquareRoot() {
+    let expression = document.getElementById("display").value;
+    try {
+        let result = Math.sqrt(eval(expression));
+        document.getElementById("display").value = result;
+    } catch (error) {
+        document.getElementById("display").value = "Error";
+    }
+}
+
+function calculateResult() {
+    let expression = document.getElementById("display").value;
+    try {
+        let result = eval(expression);
+        document.getElementById("display").value = result;
+    } catch (error) {
+        document.getElementById("display").value = "Error";
+    }
+}
+
